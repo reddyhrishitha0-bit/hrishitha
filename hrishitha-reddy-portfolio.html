@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hrishitha Reddy | M.Pharm Graduate | Regulatory Affairs Portfolio</title>
+<meta name="description" content="Portfolio of Hrishitha Reddy, M.Pharm graduate with Regulatory Affairs internship experience in CTD/eCTD documentation, dossier review, SmPC/PIL review and RIIMS tracking.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230B1F3A'/><text x='50' y='68' font-size='56' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'>HR</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1F3A; --teal:#0F766E; --teal-soft:#E3F3F1;
+  --white:#fff; --grey:#F4F6F8; --line:#D9DEE5; --text:#374151; --muted:#5B6574;
+  --head:'Inter Tight','Arial Narrow',Arial,sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --r-card:28px; --r-pill:999px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:var(--grey)}
+img,svg{max-width:100%;display:block}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);color:var(--navy);line-height:1.1;letter-spacing:-.02em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* pills */
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:var(--r-pill);padding:12px 22px;font:600 15px/1 var(--body);text-decoration:none;border:1px solid var(--navy);transition:background .2s,color .2s,border-color .2s;cursor:pointer}
+.pill.dark{background:var(--navy);color:#fff}
+.pill.dark:hover{background:var(--teal);border-color:var(--teal)}
+.pill.line{background:#fff;color:var(--navy);border-color:var(--line)}
+.pill.line:hover{border-color:var(--teal);color:var(--teal)}
+.pill svg{width:16px;height:16px}
+
+/* HERO */
+.hero-wrap{padding:20px 0 0}
+.hero{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);position:relative;overflow:hidden;min-height:680px;padding:22px 28px 0}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:5}
+.status{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:var(--r-pill);padding:8px 16px;font-size:14px;font-weight:500;color:var(--navy);background:#fff}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px var(--teal-soft)}
+.nav{display:flex;gap:26px;list-style:none;padding:0}
+.nav a{color:var(--navy);text-decoration:none;font-size:14px;font-weight:500}
+.nav a:hover{color:var(--teal)}
+.menu-btn{display:none}
+.name{font-family:var(--head);font-weight:900;text-transform:uppercase;white-space:nowrap;font-size:min(10vw,128px);letter-spacing:-.045em;line-height:.95;margin-top:64px;text-align:center;position:relative;z-index:1;color:var(--navy)}
+.name .out{color:transparent;-webkit-text-stroke:2.5px var(--navy)}
+.portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(340px,38%);z-index:2}
+.portrait img{width:100%;height:auto;filter:grayscale(1) contrast(1.05)}
+.hero-left{position:absolute;left:28px;bottom:32px;max-width:300px;z-index:3}
+.hero-left h2{font-size:26px;margin-bottom:8px}
+.hero-left p{font-size:15px;color:var(--muted);margin-bottom:18px}
+.hero-right{position:absolute;right:28px;bottom:32px;display:flex;flex-direction:column;gap:10px;z-index:3;align-items:stretch}
+.hero-right .pill{justify-content:flex-start;padding:10px 20px;font-size:14px}
+
+/* sections */
+section{padding:84px 0 0}
+.sec-head{margin-bottom:34px;max-width:720px}
+.sec-head h2{font-size:clamp(32px,5vw,52px)}
+.sec-head p{margin-top:12px;color:var(--muted)}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+ul.tick{list-style:none;padding:0;display:grid;gap:10px}
+ul.tick li{padding-left:26px;position:relative}
+ul.tick li:before{content:"";position:absolute;left:0;top:.6em;width:12px;height:2px;background:var(--teal)}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:var(--r-pill);padding:4px 12px;font-size:13px;font-weight:500;color:var(--navy);background:var(--grey)}
+.tag.t{background:var(--teal-soft);border-color:#b7dcd7;color:#0b5a54}
+.note{font-size:14px;color:var(--muted)}
+
+/* about */
+.intro{font-size:clamp(20px,2.4vw,27px);line-height:1.5;color:var(--navy);font-family:var(--head);font-weight:700;letter-spacing:-.01em;max-width:900px}
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;margin-top:30px}
+.focus{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+
+/* skills */
+.card h3{font-size:21px;margin-bottom:14px}
+.card .label{font-size:13px;font-weight:600;color:var(--teal);margin-bottom:6px}
+.develop{border-style:dashed;background:transparent}
+
+/* timeline */
+.timeline{display:grid;gap:18px;position:relative}
+.job{display:grid;grid-template-columns:230px 1fr;gap:28px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px}
+.job .when{font-weight:600;color:var(--navy)}
+.job .when span{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:4px}
+.job h3{font-size:26px;margin-bottom:4px}
+.job .org{color:var(--muted);margin-bottom:16px}
+.job.minor{background:transparent;border-style:dashed}
+.learn{margin-top:20px;background:var(--grey);border-radius:14px;padding:16px 18px;font-size:15.5px}
+.learn b{color:var(--navy)}
+
+/* lifecycle */
+.life{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:28px 0 8px;counter-reset:s}
+.step{position:relative;text-align:center;padding:0 8px}
+.step .dot{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;margin:0 auto 12px;font:800 16px var(--head);position:relative;z-index:2}
+.step:before{content:"";position:absolute;top:22px;left:-50%;width:100%;height:2px;background:var(--line);z-index:1}
+.step:first-child:before{display:none}
+.step b{display:block;color:var(--navy);font-size:15px;line-height:1.3}
+.step span{font-size:13px;color:var(--muted);display:block;margin-top:4px;line-height:1.4}
+.banner{border:1px solid #b7dcd7;background:var(--teal-soft);color:#0b4f4a;border-radius:14px;padding:14px 18px;font-weight:500;font-size:15px;margin-bottom:22px}
+
+/* table */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
+table{border-collapse:collapse;width:100%;min-width:1080px;font-size:14px}
+th{background:var(--navy);color:#fff;text-align:left;padding:12px 14px;font-weight:600;white-space:nowrap}
+td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#FAFBFC}
+.chip{display:inline-block;padding:3px 10px;border-radius:var(--r-pill);font-size:12.5px;font-weight:600;white-space:nowrap}
+.ok{background:#DDF3E4;color:#14532D}
+.wip{background:#FFF1CC;color:#6B4A00}
+.bad{background:#FDE0DF;color:#8A1C17}
+.na{background:#E8ECF1;color:#3A4556}
+.yes{color:#14532D;font-weight:700}.no{color:#8A1C17;font-weight:700}
+.sub{margin:36px 0 14px;font-size:22px}
+.how li{margin-bottom:6px}
+code{background:var(--grey);padding:2px 6px;border-radius:6px;font-size:.9em}
+
+/* certs */
+.cert .prov{color:var(--muted);font-size:15px}
+.cert .date{margin:12px 0}
+.cert .ph{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:12px}
+
+/* education */
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.edu .deg{font-family:var(--head);font-size:24px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+.cgpa{display:inline-block;margin-top:12px;font-weight:600;color:var(--navy)}
+.minor-edu{margin-top:14px}
+
+/* contact */
+.contact{background:var(--navy);border-radius:var(--r-card);padding:56px 40px;color:#DCE4EE;margin-top:84px}
+.contact h2{color:#fff;font-size:clamp(32px,5vw,56px);margin-bottom:14px}
+.contact p{max-width:560px}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.contact .pill.line{background:transparent;color:#fff;border-color:#4a5f7c}
+.contact .pill.line:hover{border-color:#fff;color:#fff}
+.contact .pill.dark{background:#fff;color:var(--navy);border-color:#fff}
+.contact .pill.dark:hover{background:var(--teal-soft);color:var(--navy)}
+footer{padding:34px 0 44px;font-size:14px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* load reveal: hero only */
+@media (prefers-reduced-motion:no-preference){
+  .name{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .portrait{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  .portrait{--x:-50%}
+}
+@media (prefers-reduced-motion:no-preference){.portrait{animation-name:riseP}@keyframes riseP{from{opacity:0;transform:translate(-50%,24px)}to{opacity:1;transform:translate(-50%,0)}}}
+
+/* tablet */
+@media (max-width:960px){
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:absolute;top:70px;right:22px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 24px;gap:14px;z-index:20}
+  .menu-btn{display:inline-flex}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.edu{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:10px}
+}
+/* mobile */
+@media (max-width:700px){
+  body{font-size:16px}
+  .hero{padding:16px 16px 0;min-height:0}
+  .topbar .dl{display:none}
+  .status{font-size:12.5px;padding:7px 12px}
+  .name{font-size:19vw;white-space:normal;line-height:.9;margin-top:34px;text-align:left}
+  .name span{display:block}
+  .portrait{position:relative;left:auto;transform:none;width:62%;margin:-10px auto 0;bottom:auto;animation:none}
+  .hero-left,.hero-right{position:static;max-width:none}
+  .hero-left{padding:18px 0 14px;margin-top:-4px}
+  .hero-right{flex-direction:row;flex-wrap:wrap;padding-bottom:22px}
+  .g2,.g3{grid-template-columns:1fr}
+  section{padding-top:64px}
+  .life{grid-template-columns:1fr;gap:22px}
+  .step{display:grid;grid-template-columns:46px 1fr;gap:14px;text-align:left;align-items:start;padding:0}
+  .step .dot{margin:0}
+  .step:before{display:none}
+  .contact{padding:40px 22px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="wrap hero-wrap" id="home">
+  <div class="hero">
+    <div class="topbar">
+      <span class="status"><i></i>Open to Regulatory Affairs roles</span>
+      <ul class="nav" id="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="pill dark dl" href="HrishithaReddy_CV.pdf" download>Download CV <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12L12 4M5 4h7v7"/></svg></a>
+      <button class="pill line menu-btn" aria-expanded="false" aria-controls="nav" id="menuBtn">Menu</button>
+    </div>
+
+    <h1 class="name" aria-label="Hrishitha Reddy"><span class="out">Hrishitha</span> <span>Reddy</span></h1>
+
+    <div class="portrait">
+      <!-- Replace portrait.png with your own cut-out photo (transparent background). A placeholder shows until then. -->
+      <img src="portrait.png" alt="Portrait of Hrishitha Reddy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 340 380%27%3E%3Ccircle cx=%27170%27 cy=%27125%27 r=%2788%27 fill=%27%23C9D1DB%27/%3E%3Cpath d=%27M10 380c0-100 70-150 160-150s160 50 160 150z%27 fill=%27%230B1F3A%27/%3E%3C/svg%3E'">
+    </div>
+
+    <div class="hero-left">
+      <h2>Regulatory Affairs</h2>
+      <p>M.Pharm graduate focused on regulatory documentation, dossier review and compliance.</p>
+      <a class="pill dark" href="#projects">View My Portfolio <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12L12 4M5 4h7v7"/></svg></a>
+    </div>
+
+    <div class="hero-right">
+      <a class="pill line" href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill line" href="mailto:your.email@example.com">Email</a>
+      <a class="pill line" href="HrishithaReddy_CV.pdf" download>Download CV</a>
+      <a class="pill line" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-head"><h2>About me</h2></div>
+  <p class="intro">I'm an M.Pharm graduate in Pharmaceutical Quality Assurance with a six-month Regulatory Affairs internship at Hetero Labs Limited. I reviewed Product Dossier Reports, assisted with CTD/eCTD dossier preparation, supported SmPC and PIL review, and entered and tracked regulatory data in RIIMS. I am looking to start my career in regulatory documentation and project support, where accuracy and well-kept records matter.</p>
+  <div class="about-grid">
+    <div class="card">
+      <p>My internship showed me how much of regulatory work depends on small details: a version number that matches, a label that agrees with the dossier, a tracker that is up to date. I like structured documentation and checking my work carefully.</p>
+      <p style="margin-top:14px">Through my M.Pharm thesis I studied the European Union framework for generic medicines, from marketing authorization to post-approval variations. I keep learning, and I want to build hands-on experience with the systems used in regulatory project support.</p>
+    </div>
+    <div class="card">
+      <h3>Career focus</h3>
+      <ul class="tick">
+        <li><b>Regulatory Affairs</b> (priority)</li>
+        <li><b>Regulatory Project Support</b> (priority)</li>
+        <li>Regulatory Documentation</li>
+        <li>Regulatory Operations</li>
+      </ul>
+      <p class="note" style="margin-top:14px">Open to entry-level roles at pharmaceutical companies and CROs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-head">
+    <h2>Regulatory skills</h2>
+    <p>Practical exposure from my internship is listed separately from academic knowledge.</p>
+  </div>
+  <div class="grid g3">
+    <div class="card">
+      <div class="label">Internship exposure</div>
+      <h3>Regulatory documentation</h3>
+      <ul class="tick">
+        <li>CTD/eCTD dossier documentation</li>
+        <li>Product Dossier Report (PDR) review</li>
+        <li>SmPC and PIL review</li>
+        <li>Document consistency and accuracy checks</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="label">Internship exposure</div>
+      <h3>Regulatory information management</h3>
+      <ul class="tick">
+        <li>RIIMS data entry, tracking and updates</li>
+        <li>PharmaReady eCTD submission software: training and exposure</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="label">Internship and QA exposure</div>
+      <h3>Documentation and compliance</h3>
+      <ul class="tick">
+        <li>GMP and GDP documentation practices</li>
+        <li>ALCOA+ data integrity principles</li>
+        <li>Labeling discrepancy checks</li>
+        <li>Document review and discrepancy identification</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="label">Working knowledge</div>
+      <h3>Office tools</h3>
+      <ul class="tick">
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft PowerPoint</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="label">Academic knowledge (thesis)</div>
+      <h3>EU regulatory knowledge</h3>
+      <ul class="tick">
+        <li>EU pharmaceutical regulatory framework</li>
+        <li>Marketing authorization and post-approval variations</li>
+        <li>ICH Q12 and lifecycle management concepts</li>
+      </ul>
+    </div>
+    <div class="card develop">
+      <div class="label" style="color:var(--muted)">Development areas, not current skills</div>
+      <h3>Areas I am developing</h3>
+      <ul class="tick">
+        <li>EU CTR and CTIS operational workflows</li>
+        <li>eTMF filing and document reconciliation</li>
+        <li>Regulatory tracker management</li>
+        <li>PDF editing, bookmarks and hyperlinks</li>
+        <li>Ethics committee and IRB documentation workflows</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-head"><h2>Professional experience</h2></div>
+  <div class="timeline">
+    <article class="job">
+      <div class="when">July 2025 – January 2026<span>Six months, internship</span></div>
+      <div>
+        <h3>Regulatory Affairs Intern</h3>
+        <div class="org">Hetero Labs Limited, Formulation Unit VII, Jeedimetla, Hyderabad</div>
+        <ul class="tick">
+          <li>Reviewed Product Dossier Reports (PDR) for accuracy, consistency and regulatory documentation requirements.</li>
+          <li>Assisted with CTD/eCTD dossier preparation.</li>
+          <li>Supported drafting and review of Summary of Product Characteristics (SmPC) and Patient Information Leaflet (PIL) documents.</li>
+          <li>Performed regulatory data entry, tracking and updates in RIIMS.</li>
+          <li>Received training and exposure to PharmaReady eCTD submission software.</li>
+          <li>Checked labeling discrepancies and supported documentation accuracy.</li>
+        </ul>
+        <div class="learn"><b>Relevant learning.</b> This work taught me to check documents for completeness and consistency, keep regulatory records current in a tracking system, and treat small discrepancies as things to raise and resolve. These habits carry directly into regulatory project support, where tracking, document quality and compliance go together.</div>
+      </div>
+    </article>
+
+    <article class="job minor">
+      <div class="when">July 2026 – September 2026<span>Brief supporting experience</span></div>
+      <div>
+        <h3>Corporate Quality Assurance</h3>
+        <div class="org">Hetero Labs Limited, Formulation Corporate, Sanath Nagar, Hyderabad</div>
+        <ul class="tick">
+          <li>Performed SOP/STP versus practice checks.</li>
+          <li>Supported SOP updates.</li>
+          <li>Recorded Gemba observations and followed up on closure.</li>
+          <li>Performed routine GMP checks covering equipment, areas, records and documentation.</li>
+          <li>Worked with GMP, ALCOA+ and data integrity requirements.</li>
+        </ul>
+        <div class="learn"><b>Transferable relevance.</b> A short period, but useful for document control, following up observations to closure, and attention to detail in records.</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-head">
+    <h2>Projects</h2>
+    <p>One academic research project and one self-created learning project.</p>
+  </div>
+
+  <article class="card" id="thesis">
+    <span class="tag t">Academic research, not employment experience</span>
+    <h3 style="font-size:clamp(22px,3vw,30px);margin:14px 0 16px">Lifecycle Management of Generic Solid Oral Dosage Forms in the European Union: From Registration to Post-Approval Compliance</h3>
+    <p class="note" style="margin-bottom:6px">M.Pharm thesis, Manipal College of Pharmaceutical Sciences, MAHE</p>
+
+    <div class="grid g2" style="margin-top:22px">
+      <div>
+        <h3 style="font-size:19px">Project overview</h3>
+        <p>The thesis examines how a generic solid oral dosage form is handled in the EU, from the first registration through to the changes and compliance duties that follow approval. The aim was to understand the regulatory framework and documentation that apply across a product's life.</p>
+      </div>
+      <div>
+        <h3 style="font-size:19px">Regulatory topics studied</h3>
+        <ul class="tick">
+          <li>EU marketing authorization framework</li>
+          <li>CTD documentation and Module 3</li>
+          <li>Post-approval variations</li>
+          <li>ICH Q12</li>
+          <li>Lifecycle management and continuing compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-size:19px;margin-top:24px">Relevance to Regulatory Affairs</h3>
+    <p>The project built my academic understanding of regulatory requirements, dossier structure and how post-approval changes are documented and classified. It gives me a framework for understanding why documents must be accurate, current and consistent over time.</p>
+
+    <h3 style="font-size:19px;margin-top:28px">Illustrative lifecycle</h3>
+    <div class="life" role="img" aria-label="Five-step illustrative lifecycle: Registration, Marketing Authorization, Post-Approval Variations, Lifecycle Maintenance, Ongoing Compliance">
+      <div class="step"><div class="dot">1</div><div><b>Registration</b><span>Dossier prepared in CTD format</span></div></div>
+      <div class="step"><div class="dot">2</div><div><b>Marketing Authorization</b><span>Assessment and approval</span></div></div>
+      <div class="step"><div class="dot">3</div><div><b>Post-Approval Variations</b><span>Changes reported by type</span></div></div>
+      <div class="step"><div class="dot">4</div><div><b>Lifecycle Maintenance</b><span>Documentation kept current</span></div></div>
+      <div class="step"><div class="dot">5</div><div><b>Ongoing Compliance</b><span>Obligations continue</span></div></div>
+    </div>
+    <p class="note">Illustrative only. Not every product follows an identical path.</p>
+  </article>
+
+  <article class="card" id="tracker" style="margin-top:22px">
+    <div class="banner">Self-Created Learning Project — Illustrative Example; Not a Company Submission or Professional CTIS/eTMF Experience.</div>
+    <h3 style="font-size:clamp(22px,3vw,30px)">Sample Regulatory Documentation Tracker and Completeness Checklist</h3>
+    <p style="margin:12px 0 22px;max-width:760px">I built this mock tracker in Excel to practise the organisation a project assistant needs: following documents by version, owner, due date and review status, and noting what is still outstanding. All study IDs, document IDs, dates and names are fictional.</p>
+
+    <div class="tablewrap" tabindex="0" aria-label="Sample documentation tracker table, scrolls horizontally">
+      <table id="trk">
+        <thead><tr>
+          <th>Study ID</th><th>Document ID</th><th>Document type</th><th>Description</th><th>Responsible role</th><th>Planned due</th><th>Completed</th><th>Version</th><th>Review status</th><th>Completeness</th><th>Comments / outstanding actions</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+      <button class="pill dark" id="dlCsv" type="button">Download tracker (CSV, opens in Excel)</button>
+    </div>
+
+    <h3 class="sub">Document completeness checklist</h3>
+    <div class="tablewrap" tabindex="0" aria-label="Sample completeness checklist, scrolls horizontally">
+      <table id="chk" style="min-width:860px">
+        <thead><tr><th>Document title</th><th>Correct version</th><th>Date present</th><th>Required sections present</th><th>File name verified</th><th>Review status</th><th>Outstanding action</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="grid g2" style="margin-top:26px">
+      <div>
+        <h3 style="font-size:19px;margin-bottom:10px">How I would maintain it</h3>
+        <ul class="tick how">
+          <li>Update the row the same day a document changes status.</li>
+          <li>Raise the version number with every revision and never overwrite earlier entries.</li>
+          <li>Use a status drop-down (Not started, In review, Complete) so entries stay uniform.</li>
+          <li>In Excel, flag rows where the due date has passed and the completed date is empty, for example with <code>=IF(AND(F2&lt;TODAY(),G2=""),"Overdue","")</code>.</li>
+          <li>Apply conditional formatting to colour status cells.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:19px;margin-bottom:10px">What it shows</h3>
+        <p>Organised document tracking, version control habits, a repeatable completeness check and attention to detail, all of which support a Regulatory Project Assistant. It does not show experience with CTIS, eTMF or any company system.</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="sec-head"><h2>Certifications and training</h2></div>
+  <div class="grid g3">
+    <div class="card cert"><h3>Clinical Trials Data Management and Quality Assurance</h3><div class="prov">Johns Hopkins University / Coursera</div><div class="date"><span class="tag">June 2025</span></div><div class="ph"><!-- Add certificate link: <a href="URL">View certificate</a> -->Certificate link: add later</div></div>
+    <div class="card cert"><h3>Introduction to Good Clinical Practice (GCP)</h3><div class="prov">Novartis / Coursera</div><div class="date"><span class="tag">January 2026</span></div><div class="ph">Certificate link: add later</div></div>
+    <div class="card cert"><h3>Drug Development Product Management Specialization</h3><div class="prov">University of California San Diego / Coursera</div><div class="date"><span class="tag">May 2025</span></div><div class="ph">Certificate link: add later</div></div>
+    <div class="card cert"><h3>RIIMS regulatory data management</h3><div class="prov">Hetero Labs internship: training and exposure</div><div class="date"><span class="tag">January 2026</span></div></div>
+    <div class="card cert"><h3>PharmaReady eCTD submission software</h3><div class="prov">Hetero Labs internship: training and exposure</div><div class="date"><span class="tag">January 2026</span></div></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sec-head"><h2>Education</h2></div>
+  <div class="edu">
+    <div class="card">
+      <div class="deg">Master of Pharmacy (M.Pharm)</div>
+      <p><b>Pharmaceutical Quality Assurance</b></p>
+      <p>Manipal College of Pharmaceutical Sciences, Manipal Academy of Higher Education (MAHE), Manipal, Karnataka</p>
+      <p class="note">2024 – 2026</p>
+      <span class="cgpa">CGPA 7.5</span>
+    </div>
+    <div class="card">
+      <div class="deg">Bachelor of Pharmacy (B.Pharm)</div>
+      <p>RBVRR Women's College of Pharmacy, Osmania University, Hyderabad, Telangana</p>
+      <p class="note">2020 – 2024</p>
+      <span class="cgpa">CGPA 7.9</span>
+    </div>
+  </div>
+  <p class="note minor-edu">Earlier qualifications (Intermediate and SSC) are listed in my CV.</p>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="sec-head"><h2>Research and academic activities</h2></div>
+  <div class="grid g3">
+    <div class="card">
+      <h3>Review article</h3>
+      <p><b>Cancer Neuroscience: Neural Regulation of Tumor Growth</b></p>
+      <p style="margin-top:10px"><span class="tag">Manuscript completed, under consideration for journal submission</span></p>
+      <p class="note" style="margin-top:10px">Not yet published.</p>
+    </div>
+    <div class="card">
+      <h3>Poster presentations</h3>
+      <ul class="tick">
+        <li><b>Healthcare-Associated Infections: Addressing Key Patient Safety Issues.</b> Icon cGMP &amp; National cGMP Day, 2024, MAHE</li>
+        <li><b>Metabolomics in Maternal &amp; Child Health.</b> IEM Metabolic Meet, 2024, Kasturba Medical College, MAHE</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Volunteering</h3>
+      <ul class="tick">
+        <li>Volunteer Services Organization, MAHE, 2024–2026</li>
+        <li>National Service Scheme, RBVRR Women's College of Pharmacy, 2022–2024</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:0">
+  <div class="contact">
+    <h2>Let's talk about regulatory roles</h2>
+    <p>I am looking for entry-level Regulatory Affairs and Regulatory Project Support opportunities. If you have a suitable role, please get in touch.</p>
+    <div class="row">
+      <a class="pill dark" href="mailto:your.email@example.com">Email me</a>
+      <a class="pill line" href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener">LinkedIn profile</a>
+      <a class="pill line" href="HrishithaReddy_CV.pdf" download>Download CV (PDF)</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="wrap">
+  <footer>
+    <span>© <span id="yr"></span> Hrishitha Reddy. M.Pharm graduate, Regulatory Affairs.</span>
+    <span>Tracker data on this site is fictional.</span>
+  </footer>
+</div>
+
+<script>
+// ---- Mobile menu
+const mb=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded',false)}});
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// ---- Fictional tracker data
+const H=["Study ID","Document ID","Document type","Description","Responsible role","Planned due","Completed","Version","Review status","Completeness","Comments / outstanding actions"];
+const R=[
+["STUDY-DEMO-001","DOC-001","Protocol","Clinical study protocol, final","Regulatory Project Assistant","2026-01-12","2026-01-11","v2.0","Approved","Complete","None"],
+["STUDY-DEMO-001","DOC-002","Investigator Brochure","Investigator brochure, current edition","Regulatory Lead","2026-01-15","2026-01-15","v4.1","Approved","Complete","None"],
+["STUDY-DEMO-001","DOC-003","Informed Consent Form","Patient consent form, site template","Regulatory Project Assistant","2026-01-20","2026-01-22","v1.3","In review","Incomplete","Version number in footer does not match cover page"],
+["STUDY-DEMO-001","DOC-004","Cover Letter","Submission cover letter","Regulatory Project Assistant","2026-01-25","","v1.0","Not started","Incomplete","Awaiting final document list"],
+["STUDY-DEMO-001","DOC-005","Ethics Committee Application","Application form and attachments","Regulatory Lead","2026-01-28","","v1.1","In review","Incomplete","Signature date missing on page 4"],
+["STUDY-DEMO-002","DOC-006","Protocol","Clinical study protocol, draft","Regulatory Lead","2026-02-02","2026-02-05","v0.8","In review","Incomplete","Draft status: not for submission"],
+["STUDY-DEMO-002","DOC-007","Site Information Sheet","Site contact and facility details","Regulatory Project Assistant","2026-02-06","2026-02-06","v1.0","Approved","Complete","None"],
+["STUDY-DEMO-002","DOC-008","Insurance Certificate","Study insurance confirmation","Project Manager","2026-02-10","","v1.0","Not started","Incomplete","Requested from project manager; follow up"],
+["STUDY-DEMO-002","DOC-009","Patient Information Sheet","Participant information leaflet","Regulatory Project Assistant","2026-02-12","2026-02-12","v2.2","Approved","Complete","File name corrected to match naming convention"],
+["STUDY-DEMO-002","DOC-010","Tracker Update","Monthly status summary","Regulatory Project Assistant","2026-02-28","","v1.0","Not started","Incomplete","Due at month end"]
+];
+const C=[
+["Informed Consent Form, STUDY-DEMO-001","No","Yes","Yes","Yes","In review","Align version in footer with cover page"],
+["Ethics Committee Application, STUDY-DEMO-001","Yes","No","Yes","Yes","In review","Add signature date on page 4"],
+["Patient Information Sheet, STUDY-DEMO-002","Yes","Yes","Yes","Yes","Approved","None"],
+["Insurance Certificate, STUDY-DEMO-002","Yes","Yes","No","No","Not started","Obtain document and verify file name"],
+["Cover Letter, STUDY-DEMO-001","Yes","No","No","Yes","Not started","Complete after final document list"]
+];
+const chip=v=>{const m={"Approved":"ok","Complete":"ok","In review":"wip","Not started":"na","Incomplete":"bad"};return `<span class="chip ${m[v]||'na'}">${v}</span>`};
+const yn=v=>`<span class="${v==='Yes'?'yes':'no'}">${v}</span>`;
+document.querySelector('#trk tbody').innerHTML=R.map(r=>`<tr>${r.map((c,i)=>`<td>${(i===8||i===9)?chip(c):(c||'—')}</td>`).join('')}</tr>`).join('');
+document.querySelector('#chk tbody').innerHTML=C.map(r=>`<tr>${r.map((c,i)=>`<td>${(i>=1&&i<=4)?yn(c):(i===5?chip(c):c)}</td>`).join('')}</tr>`).join('');
+
+// ---- CSV download (fictional data only)
+document.getElementById('dlCsv').addEventListener('click',()=>{
+  const q=s=>`"${String(s).replace(/"/g,'""')}"`;
+  const lines=[H,...R].map(r=>r.map(q).join(',')).join('\r\n');
+  const blob=new Blob(["\ufeff"+lines],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Sample_Regulatory_Documentation_Tracker_FICTIONAL.csv';
+  document.body.appendChild(a);a.click();a.remove();
+});
+</script>
+</body>
+</html>
